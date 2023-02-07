@@ -1760,6 +1760,9 @@ input, select, textarea {
 
 /* Section/Article */
 
+	article {
+		padding-bottom:0px;
+	}
 	section.special, article.special {
 		text-align: center;
 	}
@@ -1792,6 +1795,9 @@ input, select, textarea {
 
 	header.major h2 {
 		font-size: 2em;
+	}
+	.projectSkills {
+		color:rgb(33, 12, 150);
 	}
 
 /* Form */
@@ -3218,4 +3224,12 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+
+
+
+	/* more css style sheet */
+	.image {
+		max-width: 464;
+		max-height: 310.88;
 	}
