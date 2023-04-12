@@ -1,0 +1,1031 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Aman
+* Template Name : Reju | Personal Portfolio Template
+* File          : Reju main css files
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+
+
+    
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Header area css
+
+04. About area css
+
+05. Skills area css
+
+06. Service area css
+
+07. Process area css
+
+08. Portfolio/work area css
+
+09. Testimonial area css
+
+10. Contact area css
+
+11. Footer area css
+
+-------------------------------------------------------------------------------------- */
+
+
+
+/* Fonts 'Gotham Rounded' */
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('../fonts/GothamRounded-book.eot');
+  src: url('../fonts/GothamRounded-book.woff2') format('woff2'),
+       url('../fonts/GothamRounded-book.woff') format('woff'),
+       url('../fonts/GothamRounded-book.ttf') format('truetype'),
+       url('../fonts/GothamRounded-book.svg#GothamRounded-book') format('svg'),
+       url('../fonts/GothamRounded-book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url('../fonts/GothamRounded-Medium.eot');
+  src: url('../fonts/GothamRounded-Medium.woff2') format('woff2'),
+       url('../fonts/GothamRounded-Medium.woff') format('woff'),
+       url('../fonts/GothamRounded-Medium.ttf') format('truetype'),
+       url('../fonts/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg'),
+       url('../fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url('../fonts/GothamRounded-Bold.eot');
+  src: url('../fonts/GothamRounded-Bold.woff2') format('woff2'),
+       url('../fonts/GothamRounded-Bold.woff') format('woff'),
+       url('../fonts/GothamRounded-Bold.ttf') format('truetype'),
+       url('../fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg'),
+       url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'GothamRounded-Medium', sans-serif;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+p {
+    color: #666;
+}
+
+i.fa {
+    color: #13c6dd;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn, input[type='submit'] {
+    display: inline-block;
+    background: transparent;
+    padding: 10px 25px;
+    border: 2px solid #13c6dd;
+    color: #13c6dd;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    font-family: 'GothamRounded-Medium', sans-serif;
+
+}
+
+.btn:hover, input[type='submit']:hover {
+    background-color: #13c6dd;
+    color: #fff;
+}
+
+.btn.dark {
+    background-color: #13c6dd;
+    color: #fff;
+}
+
+.btn.dark:hover {
+    color: #13c6dd;
+    background-color: transparent;
+}
+
+.section {
+    padding: 70px 0px;
+}
+
+.paper-shadow-bottom {
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.25),
+                0px 3px 0px 0px #fff,
+                0px 4px 0px 0px rgba(0,0,0,0.15),
+                0px 6px 0px 0px #fff,
+                0px 7px 0px 0px rgba(0,0,0,0.10),
+                0px 9px 0px 0px #fff,
+                0px 10px 0px 0px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    /*color: #333;*/
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 35px;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.section-title h2:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: #13c6dd;
+}
+
+.section-title p {
+    margin-top: 20px;
+}
+
+h3.subtitle {
+    margin-bottom: 30px;
+    font-family: 'GothamRounded-book', sans-serif;
+}
+
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.color-bg {
+    background: #13c6dd;
+    color: #fff;
+}
+
+.color-bg .section-title h2, 
+.color-bg .section-title p,
+.img-bg .section-title p {
+    color: #fff;
+}
+
+.color-bg .section-title h2:before {
+    background-color: #fff;
+}
+.technicalTierra {
+    color: #13c6dd;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.sticky-menu {
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.mainmenu {    
+    margin-top: 10px;    
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .mainmenu {    
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+}
+
+.navbar-brand {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar-nav  li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'GothamRounded-Medium';
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+    background: none;
+    color: #bbb;
+}
+
+.mainmenu .navbar-nav li.active a {
+    color: #13c6dd;
+    font-weight: 600;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Header area css
+* -------------------------------------------------------------------------------------- */
+
+.header-area {
+    height: 100%;
+    min-height: 300px;
+    /*max-height: 650px;*/
+    position: relative;
+    background-image: url(../img/header/pexels-alteredsnaps-13918816.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 2;
+}
+
+.header-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.caption {
+    position: relative;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    z-index: 3;
+}
+
+.caption h4 {
+    margin-bottom: 20px;
+}
+
+.caption h1 {
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.caption .btn {
+    margin: 15px 10px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               04. About area css
+* ---------------------------------------------------------------------------------------*/
+
+
+.about-area {
+    background: #fff;
+}
+
+.about-text h2 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.about-text .btn {
+    margin-top: 10px;
+}
+
+
+.contact-info {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+.contact-info li  {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+.contact-info li i.fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;    
+    border-radius: 50px;
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
+    color: #13c6dd;
+    border: 1px solid #13c6dd;
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.contact-info li p {
+    line-height: 40px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               05. Skills area css
+* ---------------------------------------------------------------------------------------*/
+.skills-area {
+    /* background-image: url(../img/bg/skill-bg.jpg);  
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    position: relative; */
+    background-color: #333;
+}
+
+.img-bg.section {
+    color: #fff;
+}
+
+.skills-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.skills-item {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 50px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.skills-item-progress {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #13c6dd;
+    border-radius: 10px;
+}
+
+.color-bg .skills-item-progress {
+    background-color: #fff;
+}
+
+.skills-item-progress:after {
+    background: none;
+    box-shadow: 0 0 0 5px;
+    opacity: 0.3;
+}
+
+.skills-item .counter {
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    color: #030303;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(50%, -100%);
+    -ms-transform: translate(50%, -100%);
+    -o-transform: translate(50%, -100%);
+    transform: translate(50%, -100%);
+}
+
+.img-bg .skills-item .counter, 
+.color-bg .skills-item .counter {
+    color: #fff;
+}
+
+.skills .progress-title {
+    margin-top: 17px;
+    font-size: 19px;
+    font-family: 'GothamRounded-Book', sans-serif;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   06. Service area css
+* --------------------------------------------------------------------------------------- */
+
+/* .service-area {
+}
+
+.single-service {
+    padding: 0 20px;
+    transition: 0.2s ease-out;
+    margin-bottom: 25px;
+}
+
+.single-service i.fa {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #13c6dd;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 50px;    
+}
+
+.single-service h3, 
+.single-service h4 {
+    position: relative;
+    font-family: 'GothamRounded-Book', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    clear: right;
+}
+
+.single-service p {
+    margin-top: 10px;
+    overflow: hidden;
+} */
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               07. Process area css
+* ---------------------------------------------------------------------------------------*/
+/* .process-area {
+    background-image: url(../img/bg/work-precess-bg.jpg);  
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.process-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.process-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1200px) {
+    .process-box {
+        padding: 0 30px;
+    }
+}
+
+.number {
+    border: 1px solid #13c6dd;
+    background: #13c6dd;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.process-box:before {
+    position: absolute;
+    content: '';
+    top: 25px;
+    left: 90px;
+    width: 100px;
+    text-align: right;
+    line-height: 3px;
+    height: 3px;
+    color: #13c6dd;
+    border-bottom: 3px dashed #13c6dd;
+    transform: translate( 0, -50%);
+    -ms-transform: translate( 0, -50%);
+    -webkit-transform: translate( 0, -50%);
+}
+
+.process-box:after {
+    position: absolute;
+    content: '\f0a9';
+    font-family: fontAwesome;
+    font-size: 30px;
+    top: 25px;
+    left: 50%;
+    width: 170px;
+    text-align: right;
+    line-height: 3px;
+    height: 3px;
+    color: #13c6dd;
+    transform: translate( -50%, -50%);
+    -ms-transform: translate( -50%, -50%);
+    -webkit-transform: translate( -50%, -50%);
+}
+
+.process-box.last:after {
+    content: '\f058';
+}
+
+.process-box p{
+    color: #fff;
+} */
+
+
+/* ----------------------------------------------------------------------------------------
+*                               08. Portfolio/work area css
+* --------------------------------------------------------------------------------------- */
+.portfolio .mix {
+    display: none;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.filters li {
+    display: inline-block;
+    margin: 0px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'GothamRounded-Medium', sans-serif;
+}
+
+.filters li.active {
+    color: #13c6dd;
+    border-bottom: 2px solid #13c6dd;
+}
+.work-filter {
+    font-size: 2.5rem;
+}
+
+
+.color-bg .filters li.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.work-items {
+    margin-top: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.work-items .item {
+    position: relative;
+    overflow: hidden;
+    margin: 5px -10px;
+}
+
+.work-items .item img {
+    width: 100%;
+    width: 100%;
+    transition: 0.8s ease-out;
+}
+
+.work-items .overlay{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.work-items .item:hover .overlay {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.work-items .item:hover img {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.work-items .overlay i.fa {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.workItemTitle {
+    Margin: 0 auto;
+    padding-top: 35%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 3rem;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                09. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+/* .testimonial-area.img-bg {
+
+    background-image: url(https://images.pexels.com/photos/116169/pexels-photo-116169.jpeg?w=1920&h=1080&auto=compress&cs=tinysrgb);  
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.testimonial-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 992px) {
+    .single-testimonial {
+        margin: 0 200px;
+    }
+}
+
+.single-testimonial i.fa {
+    font-size: 40px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.img-bg .single-testimonial i.fa {}
+.color-bg .single-testimonial i.fa {
+    color: #fff;
+}
+
+.single-testimonial img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.single-testimonial p {
+    font-size: 20px;
+    font-style: italic;
+    color: inherit;
+    overflow: hidden;
+}
+
+.single-testimonial h3 {
+    margin-bottom: 5px;
+    margin-top: 30px;
+    position: relative;
+    line-height: 35px;
+}
+
+.single-testimonial .desg {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin: 0px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    background: #000;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    font-size: 25px;
+    color: #333;
+    background: none;
+    padding: 0 5px;
+}
+
+.img-bg .owl-theme .owl-controls .owl-buttons i.fa,
+.color-bg .owl-theme .owl-controls .owl-buttons i.fa {
+    color: #fff;
+} */
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   10. Contact area css
+* --------------------------------------------------------------------------------------- */
+
+#contact {
+    background-color: #333;
+    /* margin:0 auto;  */
+    padding: 50px auto;
+}
+.contact-form {
+    /* background-color: #ffffff; */
+    
+    border-radius: 3px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    padding-left: 25px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: white;
+    background-image: none;
+    background-color: #333;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 45px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 0;
+    width: 15px;
+    text-align:center;
+    line-height: 45px;
+    color: #13c6dd;
+}
+#getInTough {
+    color: white;
+}
+#contactEmail {
+    color:white;
+    font-weight:bold;
+}
+
+.in_name:before {content: '\f007';}
+.in_email:before {content: '\f0e0';}
+.in_subject:before {content: '\f0c6';}
+.in_message:before {content: '\f1d8';}
+
+.contact-form textarea#message {
+    padding-top: 10px;
+    height: 115px;
+}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #13c6dd;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   11. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #13c6dd;
+    padding: 40px 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-area p {
+    color: inherit; 
+}
+
+@media (min-width: 768px) {
+    .social-links{
+        float: right;
+    }
+}
+
+.social-links {
+    /* margin-right: auto;
+    margin-left: auto; */
+    text-align:right;
+}
+.social-links li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.social-links li a i {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.social-links li a:hover i {
+    color: #13c6dd;
+    background-color: #fff;
+}
+/* i.fa.fa-github::before {
+    font-size: 65px;
+    height:100px;
+    width:100px;
+}
+i.fa.fa-linkedin::before {
+    font-size: 65px;
+    height:100px;
+    width:100px;
+}
+i.fa.fa-twitter::before {
+    font-size: 65px;
+    height:100px;
+    width:100px;
+} */
+
+
+@media (max-width: 767px) {
+    .footer-area {
+        text-align: center;
+    }
+    .footer-area .social-links {
+        float:none;
+        display:table;
+        margin: auto;
+    }
+}
+
+.copyright {
+    /* vertical-align:middle; */
+    font-weight: bold;
+}
+ 

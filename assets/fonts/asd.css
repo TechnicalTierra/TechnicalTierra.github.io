@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('GothamRounded-Book.woff') format('woff'),
+       url('GothamRounded-Book.ttf') format('truetype'),
+       url('GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url('GothamRounded-Medium.eot');
+  src: url('GothamRounded-Medium.woff2') format('woff2'),
+       url('GothamRounded-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

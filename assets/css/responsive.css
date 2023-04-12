@@ -1,0 +1,156 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Aman
+* Template Name : Reju | Personal Portfolio Template
+* Version       : 1.0     
+* ---------------------------------------------------------------------------------------- */
+  
+
+/* Medium Layout */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .process-box:before {
+        left: 80px;
+        width: 85px;
+    }
+}
+
+
+/* Tablet Layout */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .caption h1 {
+        font-size: 35px;
+    }
+    .navbar-nav li a {
+        padding: 15px 10px;
+    }
+
+    .me-image {
+        margin-bottom: 30px;
+    }
+    .resume-area {
+        margin-top: 20px;
+    }
+    .skills {
+        margin-top: 40px;
+    }
+
+    .portfolio-caption h4 {
+        margin-top: 80px;
+    }
+    .testimonial-item i.fa {
+        margin-top: 20px;
+    }
+    .process-box:before {
+    width: 140px;
+    }
+}
+
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 767px) {
+    body, p {
+        line-height: 28px;
+        font-size: 15px;
+    }
+    .section {
+        padding: 50px 0px;
+    }
+    .section-title {
+        margin-bottom: 50px;
+    }
+    .section-title h2 {
+        line-height: 30px;
+    }
+    .caption h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .caption p {
+        line-height: 28px;
+        font-size: 15px;
+    }
+    .caption .btn, .btn, input[type='submit'] {
+        margin-bottom: 0px;
+        padding: 8px 20px;
+    }
+
+
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        background: #555;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav {
+        margin: 0;
+    }
+    .mainmenu .navbar-nav li {
+        float: none;
+        display: block;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-toggle {}
+    a.about-button {
+        margin-top: 0;
+    }
+
+    .me-image {
+        margin-bottom: 20px;
+    }
+
+    .about-text h2,
+    .single-service h2,
+    .testimonial-item h2,
+    .follow-me h2 {
+        font-size: 22px;
+    }
+
+    .filters li {
+        margin: 0px 10px;
+    }
+
+
+    .testimonial-item i.fa {
+        margin-top: 20px;
+    }
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .process-box:after {
+        left: 140px;
+    }
+
+}
+
+
+/* Small Mobile Layout */
+
+@media only screen and (max-width: 480px) {
+    .single-testimonial img {
+        float: none;
+        clear: both;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .single-testimonial p {
+        padding: 0 20px;
+    }
+}
